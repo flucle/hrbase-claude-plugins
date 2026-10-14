@@ -1,0 +1,6 @@
+{
+  "name": "hrbase",
+  "description": "Claude を HRbase の MCP サーバーに接続し、HRbase の機能を使えるようにします",
+  "version": "0.1.0",
+  "author": { "name": "HRbase" }
+}
