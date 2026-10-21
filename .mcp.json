@@ -1,6 +1,6 @@
 {
   "HRbase": {
     "type": "http",
-    "url": "https://qa-hrbase.link/api/mcp"
+    "url": "https://stg-hrbase-pro.link/api/mcp"
   }
 }

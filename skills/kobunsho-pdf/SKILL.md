@@ -13,7 +13,7 @@ description: 公文書の ZIP を添付されたとき、HRbase の MCP ツー�
 
 【手順 2】ZIP を HRbase にアップロードする
 - 次の curl で、ZIP のバイト列そのものを POST してください。JSON や Base64 にはしないでください。
-  curl -sS -X POST "https://qa-hrbase.link/api/ai_assistants/attachment_upload_grants/<id>/attachment_files" \
+  curl -sS -X POST "https://stg-hrbase-pro.link/api/ai_assistants/attachment_upload_grants/<id>/attachment_files" \
     -H "HRbase-Attachment-Upload-Token: <token>" \
     -H "Content-Type: application/octet-stream" \
     --data-binary @"<ZIP のパス>" \
