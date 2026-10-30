@@ -1,0 +1,11 @@
+{
+  "name": "hrbase",
+  "owner": { "name": "HRbase" },
+  "plugins": [
+    {
+      "name": "hrbase",
+      "source": "./",
+      "description": "Claude を HRbase の MCP サーバーに接続し、HRbase の機能を使えるようにします"
+    }
+  ]
+}
