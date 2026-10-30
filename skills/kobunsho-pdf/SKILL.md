@@ -1,6 +1,6 @@
 ---
 name: kobunsho-pdf
-description: 電子申請で届いた公文書（日本年金機構・ハローワーク）の ZIP を、HRbase QA の MCP ツールで PDF に変換し、ファイル名を付け替えてダウンロードリンクを表示する。公文書、ZIP、PDF 変換、リネーム、ファイル名の付け方の依頼のほか、公文書変換の使い方を聞かれたときも、必ずこのスキルを使う。
+description: 電子申請で届いた公文書（日本年金機構・ハローワーク）の ZIP を、本番の公文書変換で PDF に変換し、ファイル名を付け替えてダウンロードリンクを表示する。公文書、ZIP、PDF 変換、リネーム、ファイル名の付け方の依頼のほか、公文書変換の使い方を聞かれたときも、必ずこのスキルを使う。
 ---
 
 # 公文書 PDF 変換・リネーム
@@ -67,7 +67,7 @@ description: 電子申請で届いた公文書（日本年金機構・ハロー�
 ## 手順 2：ZIP をアップロードする
 
 - 次の curl で、ZIP のバイト列そのものを POST してください。JSON や Base64 にはしないでください。Windows の PowerShell では `curl` ではなく `curl.exe` を使ってください。
-  curl -sS -X POST "https://stg-hrbase-pro.link/api/ai_assistants/attachment_upload_grants/<id>/attachment_files" \
+  curl -sS -X POST "https://proapp-api.hrbase.jp/api/ai_assistants/attachment_upload_grants/<id>/attachment_files" \
     -H "HRbase-Attachment-Upload-Token: <token>" \
     -H "Content-Type: application/octet-stream" \
     --data-binary @"<ZIP のパス>" \
